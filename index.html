@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional | Edición, Publicidad y Fotografía</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff2a2a',
+                        darkBg: '#0a0a0a',
+                        cardBg: '#141414',
+                        cardHover: '#1f1f1f',
+                        borderDark: '#262626'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-100 min-h-screen flex flex-col selection:bg-primary selection:text-white">
+
+    <!-- Header / Navbar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-borderDark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <a href="#inicio" class="text-2xl font-bold tracking-wider text-white">
+            PORTAFOLIO HMGR<span class="text-primary">.</span>
+        </a>
+        
+        <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium">
+            <a href="#inicio" class="hover:text-primary transition-colors">Inicio</a>
+            <a href="#cortometrajes" class="hover:text-primary transition-colors">Cortometrajes</a>
+            <a href="#reels" class="hover:text-primary transition-colors">Reels</a>
+            <a href="#publicidad" class="hover:text-primary transition-colors">Publicidad</a>
+            <a href="#fotografia" class="hover:text-primary transition-colors">Fotografía</a>
+            <a href="#ia-imagenes" class="hover:text-primary transition-colors">IA Imágenes</a>
+            <a href="#ia-videos" class="hover:text-primary transition-colors">IA Videos</a>
+            <a href="#contacto" class="bg-primary hover:bg-red-700 text-white px-4 py-2 rounded-full transition-all shadow-lg shadow-primary/20">Contacto</a>
+        </nav>
+
+        <button id="menu-btn" class="lg:hidden text-gray-300 hover:text-white focus:outline-none text-xl">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-cardBg border-b border-borderDark px-4 pt-2 pb-6 space-y-3">
+        <a href="#inicio" class="block py-2 hover:text-primary">Inicio</a>
+        <a href="#cortometrajes" class="block py-2 hover:text-primary">Cortometrajes</a>
+        <a href="#reels" class="block py-2 hover:text-primary">Reels & Shorts</a>
+        <a href="#publicidad" class="block py-2 hover:text-primary">Publicidad</a>
+        <a href="#fotografia" class="block py-2 hover:text-primary">Fotografía</a>
+        <a href="#ia-imagenes" class="block py-2 hover:text-primary">IA en Imágenes</a>
+        <a href="#ia-videos" class="block py-2 hover:text-primary">IA en Videos</a>
+        <a href="#contacto" class="block py-2 text-primary font-semibold">Contacto</a>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-20">
+        
+        <!-- Hero Section -->
+        <section id="inicio" class="relative py-24 md:py-36 px-4 text-center overflow-hidden border-b border-borderDark">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,42,42,0.08)_0,transparent_70%)]"></div>
+            <div class="max-w-4xl mx-auto relative z-10">
+                <span class="inline-block py-1.5 px-4 rounded-full bg-cardBg border border-borderDark text-primary text-xs font-semibold uppercase tracking-widest mb-6">
+                    Editor de Video & Creador Visual<br> González Rodríguez Héctor Michel ICM UNEVE
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-6">
+                    Transformando ideas en <span class="text-primary">experiencias visuales</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Explora mi selección de cortometrajes, reels dinámicos, campañas publicitarias y proyectos fotográficos de alta calidad.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#cortometrajes" class="bg-primary hover:bg-red-700 text-white font-medium px-8 py-3.5 rounded-full transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-play"></i> Ver Proyectos
+                    </a>
+                    <a href="#contacto" class="bg-cardBg hover:bg-cardHover border border-borderDark text-white font-medium px-8 py-3.5 rounded-full transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-envelope"></i> Contactar
+                    </a>
+                </div>
+            </div>
+        </section>
+
+<!-- Seccion 1: Cortometrajes (Carrusel compacto de Adobe Premiere + 6 Proyectos) -->
+<section id="cortometrajes" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+            <span class="text-primary text-sm font-semibold uppercase tracking-wider">Formato Horizontal</span>
+            <h2 class="text-3xl font-bold text-white mt-1">Cortometrajes editados con Adobe Premiere</h2>
+        </div>
+        <p class="text-gray-400 text-sm mt-2 md:mt-0">Edición cinematográfica y narrativa visual en Adobe Premiere (6 proyectos)</p>
+    </div>
+
+    <!-- CARRUSEL AUTOMÁTICO COMPACTO DE ADOBE PREMIERE (4 imágenes) -->
+    <div class="mb-16 max-w-2xl mx-auto">
+        <h3 class="text-sm font-semibold text-gray-400 mb-3 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-clapperboard text-primary"></i> Proceso de Edición en Adobe Premiere
+        </h3>
+        
+        <div class="relative w-full aspect-video bg-cardBg border border-borderDark rounded-2xl overflow-hidden shadow-xl">
+            <!-- Slides Container -->
+            <div id="carousel-track-cortos" class="flex transition-transform duration-700 ease-in-out h-full">
+                
+                <!-- Slide 1: Edit 0 -->
+                <div class="min-w-full h-full relative flex-shrink-0">
+                    <img src="edit0.png" alt="Proceso Premiere 1" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                        <span class="bg-primary/90 text-white px-2.5 py-1 rounded-full text-[11px] font-semibold shadow-md">Adobe Premiere - Montaje y Cortes</span>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Edit 1 -->
+                <div class="min-w-full h-full relative flex-shrink-0">
+                    <img src="edit2.png" alt="Proceso Premiere 2" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                        <span class="bg-primary/90 text-white px-2.5 py-1 rounded-full text-[11px] font-semibold shadow-md">Adobe Premiere - Sincronización de Audio</span>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Edit 2 -->
+                <div class="min-w-full h-full relative flex-shrink-0">
+                    <img src="edit1.png" alt="Proceso Premiere 3" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                        <span class="bg-primary/90 text-white px-2.5 py-1 rounded-full text-[11px] font-semibold shadow-md">Adobe Premiere - Transiciones y Ritmo</span>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Edit 3 -->
+                <div class="min-w-full h-full relative flex-shrink-0">
+                    <img src="edit3.png" alt="Proceso Premiere 4" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                        <span class="bg-primary/90 text-white px-2.5 py-1 rounded-full text-[11px] font-semibold shadow-md">Adobe Premiere - Colorización y Acabado</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Indicadores de puntos (Dots) -->
+            <div class="absolute bottom-3 right-3 flex space-x-1.5 z-10 bg-black/50 px-2.5 py-1 rounded-full backdrop-blur-sm">
+                <button onclick="goToSlideCorto(0)" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-all" id="dot-corto-0"></button>
+                <button onclick="goToSlideCorto(1)" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-all" id="dot-corto-1"></button>
+                <button onclick="goToSlideCorto(2)" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-all" id="dot-corto-2"></button>
+                <button onclick="goToSlideCorto(3)" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-all" id="dot-corto-3"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6 Proyectos de Cortometrajes -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Corto 1: El Show -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-video bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('1AeqzB5810SfhVwoV1CmWCwHPgKfEfnCc', 'El Show')">
+                <img src="show1.png" alt="El Show" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">El Show</h3>
+                    <p class="text-gray-400 text-sm mb-4">Cortometraje continuo (sin cortes) y editado en Adobe Premiere con una trama de terror tipo Swap.</p>
+                </div>
+                <button onclick="openVideoModal('1AeqzB5810SfhVwoV1CmWCwHPgKfEfnCc', 'El Show')" class="inline-flex items-center gap-2 text-primary hover:text-red-400 text-sm font-semibold transition-colors text-left">
+                    <i class="fa-brands fa-google-drive"></i> Reproducir video <i class="fa-solid fa-play text-xs"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Corto 2: Reviver -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-video bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('1k7RyYzGyCGqvgFIm3SiFMhgQYCWy1RSm', 'Reviver')">
+                <img src="reviver1.png" alt="Reviver" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Reviver</h3>
+                    <p class="text-gray-400 text-sm mb-4">Corto de 15 min sobre viajes en el tiempo y una pelea entre dos mejores amigos a través del tiempo, editado en Adobe Premiere.</p>
+                </div>
+                <button onclick="openVideoModal('1k7RyYzGyCGqvgFIm3SiFMhgQYCWy1RSm', 'Reviver')" class="inline-flex items-center gap-2 text-primary hover:text-red-400 text-sm font-semibold transition-colors text-left">
+                    <i class="fa-brands fa-google-drive"></i> Reproducir video <i class="fa-solid fa-play text-xs"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Corto 3: ¿Fui yo? -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-video bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('1WqhUq5NKg64ogxCnV7MHSVrsm7jaqrEy', '¿Fui yo?')">
+                <img src="fuiyo1.png" alt="¿Fui yo?" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">¿Fui yo?</h3>
+                    <p class="text-gray-400 text-sm mb-4">Cortometraje que trata sobre los problemas mentales y dependencia a otras personas, editado en Adobe Premiere.</p>
+                </div>
+                <button onclick="openVideoModal('1WqhUq5NKg64ogxCnV7MHSVrsm7jaqrEy', '¿Fui yo?')" class="inline-flex items-center gap-2 text-primary hover:text-red-400 text-sm font-semibold transition-colors text-left">
+                    <i class="fa-brands fa-google-drive"></i> Reproducir video <i class="fa-solid fa-play text-xs"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Corto 4: Entre Notas -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-video bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('146p63n3gD871u18j_keeQAtRlfJhJPRw', 'Entre Notas')">
+                <img src="entrenotas1.png" alt="Entre Notas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Entre Notas</h3>
+                    <p class="text-gray-400 text-sm mb-4">Corto de aproximadamente 30 minutos sobre la pérdida de una persona cercana y cómo piensas que aún sigue ahí. Fue el primer corto que edité en Adobe Premiere.</p>
+                </div>
+                <button onclick="openVideoModal('146p63n3gD871u18j_keeQAtRlfJhJPRw', 'Entre Notas')" class="inline-flex items-center gap-2 text-primary hover:text-red-400 text-sm font-semibold transition-colors text-left">
+                    <i class="fa-brands fa-google-drive"></i> Reproducir video <i class="fa-solid fa-play text-xs"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Corto 5: Alma en Descuido -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-video bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('1fS_9o1TxSNM7HjonxMSH5kEfYG56bS3u', 'Alma en Descuido')">
+                <img src="alma1.png" alt="Alma en Descuido" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Alma en Descuido</h3>
+                    <p class="text-gray-400 text-sm mb-4">Trata sobre el reciclaje y cómo el no limpiar la zona donde vives puede ocasionar malos olores y demencia, editado en Adobe Premiere.</p>
+                </div>
+                <button onclick="openVideoModal('1fS_9o1TxSNM7HjonxMSH5kEfYG56bS3u', 'Alma en Descuido')" class="inline-flex items-center gap-2 text-primary hover:text-red-400 text-sm font-semibold transition-colors text-left">
+                    <i class="fa-brands fa-google-drive"></i> Reproducir video <i class="fa-solid fa-play text-xs"></i>
+                </button>
+            </div>
+        </div>
+
+<!-- Corto 6: Doblaje Peacemaker -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-video bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('1sIJsPwGL7tWhwgcId-2l_fs25L8wK42G', 'Doblaje Peacemaker')">
+                <img src="peacemaker.jpeg" alt="Doblaje Peacemaker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Doblaje Peacemaker</h3>
+                    <p class="text-gray-400 text-sm mb-4">Más de 15 min de doblaje de un episodio de Peacemaker que busca hacer énfasis en las entonaciones y carisma en los personajes.</p>
+                </div>
+                <button onclick="openVideoModal('1sIJsPwGL7tWhwgcId-2l_fs25L8wK42G', 'Doblaje Peacemaker')" class="inline-flex items-center gap-2 text-primary hover:text-red-400 text-sm font-semibold transition-colors text-left">
+                    <i class="fa-brands fa-google-drive"></i> Reproducir video <i class="fa-solid fa-play text-xs"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Script para el carrusel de cortometrajes -->
+<script>
+    let currentSlideCorto = 0;
+    const totalSlidesCorto = 4;
+    const trackCortos = document.getElementById('carousel-track-cortos');
+
+    function updateCarouselCorto() {
+        if(trackCortos) {
+            trackCortos.style.transform = `translateX(-${currentSlideCorto * 100}%)`;
+            for(let i = 0; i < totalSlidesCorto; i++) {
+                const dot = document.getElementById(`dot-corto-${i}`);
+                if(dot) {
+                    if(i === currentSlideCorto) {
+                        dot.classList.remove('bg-white/50');
+                        dot.classList.add('bg-primary', 'w-5');
+                    } else {
+                        dot.classList.remove('bg-primary', 'w-5');
+                        dot.classList.add('bg-white/50');
+                    }
+                }
+            }
+        }
+    }
+
+    function nextSlideCorto() {
+        currentSlideCorto = (currentSlideCorto + 1) % totalSlidesCorto;
+        updateCarouselCorto();
+    }
+
+    function goToSlideCorto(index) {
+        currentSlideCorto = index;
+        updateCarouselCorto();
+    }
+
+    setInterval(nextSlideCorto, 4000);
+    
+    document.addEventListener("DOMContentLoaded", () => {
+        updateCarouselCorto();
+    });
+</script>
+
+        <!-- Seccion 2: Reels & Shorts (Vertical) -->
+<section id="reels" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-borderDark">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+            <span class="text-primary text-sm font-semibold uppercase tracking-wider">Formato Vertical</span>
+            <h2 class="text-3xl font-bold text-white mt-1">Reels & Videos Cortos</h2>
+        </div>
+        <p class="text-gray-400 text-sm mt-2 md:mt-0">Edición dinámica para TikTok, Instagram y Shorts (6 proyectos)</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        
+        <!-- Reel 1: Varias Distancias -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('1_qcauF87e0RVKVF2OAyozmLc2CGi8pLF', 'Varias Distancias')">
+                <img src="corto.png" alt="Varias Distancias" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-2">Varias Distancias</h3>
+                <button onclick="openVideoModal('1_qcauF87e0RVKVF2OAyozmLc2CGi8pLF', 'Varias Distancias')" class="text-primary hover:text-red-400 text-xs font-semibold">
+                    Reproducir <i class="fa-solid fa-play text-[10px]"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Reel 2: Review Mundial -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('1AuXNF-kCRVYA7kzmABXqOvIX-wpXy4fp', 'Review Mundial')">
+                <img src="fifa.jpg" alt="Review Mundial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-2">Review Mundial</h3>
+                <button onclick="openVideoModal('1AuXNF-kCRVYA7kzmABXqOvIX-wpXy4fp', 'Review Mundial')" class="text-primary hover:text-red-400 text-xs font-semibold">
+                    Reproducir <i class="fa-solid fa-play text-[10px]"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Reel 3: Memoria Conciertos -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('1KCm7SflCkRzQAQwUIBygNsluhriM5SSc', 'Memoria Conciertos')">
+                <img src="conciertos.png" alt="Memoria Conciertos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-2">Memoria Conciertos</h3>
+                <button onclick="openVideoModal('1KCm7SflCkRzQAQwUIBygNsluhriM5SSc', 'Memoria Conciertos')" class="text-primary hover:text-red-400 text-xs font-semibold">
+                    Reproducir <i class="fa-solid fa-play text-[10px]"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Reel 4: Caida fuente -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('1pAKPVuq715TY6C1SCdmdqJRbD45UYO_O', 'Caida fuente')">
+                <img src="caida.png" alt="Caida fuente" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-2">Caida fuente</h3>
+                <button onclick="openVideoModal('1pAKPVuq715TY6C1SCdmdqJRbD45UYO_O', 'Caida fuente')" class="text-primary hover:text-red-400 text-xs font-semibold">
+                    Reproducir <i class="fa-solid fa-play text-[10px]"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Reel 5: Poema voz en off -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('1606MbLl-R0SAiaVoFxZvw2VnjHQcEPEZ', 'Poema voz en off')">
+                <img src="poema.png" alt="Poema voz en off" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-2">Poema voz en off</h3>
+                <button onclick="openVideoModal('1606MbLl-R0SAiaVoFxZvw2VnjHQcEPEZ', 'Poema voz en off')" class="text-primary hover:text-red-400 text-xs font-semibold">
+                    Reproducir <i class="fa-solid fa-play text-[10px]"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Reel 6: Ecuaciones Diferenciales -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('1X59pkxRRIEZa3TRMzSAaTS0s6iWSUQez', 'Ecuaciones Diferenciales')">
+                <img src="ecuaciones.jpg" alt="Ecuaciones Diferenciales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5 text-xs"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-2">Ecuaciones Diferenciales</h3>
+                <button onclick="openVideoModal('1X59pkxRRIEZa3TRMzSAaTS0s6iWSUQez', 'Ecuaciones Diferenciales')" class="text-primary hover:text-red-400 text-xs font-semibold">
+                    Reproducir <i class="fa-solid fa-play text-[10px]"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+       <!-- Seccion 3: Publicidad (Carrusel compacto + 6 Proyectos) -->
+<section id="publicidad" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-borderDark">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+            <span class="text-primary text-sm font-semibold uppercase tracking-wider">Diseño y Creatividad</span>
+            <h2 class="text-3xl font-bold text-white mt-1">Publicidad con Adobe Photoshop / Illustrator</h2>
+        </div>
+        <p class="text-gray-400 text-sm mt-2 md:mt-0">Proceso creativo en Photoshop e Illustrator y campañas publicitarias</p>
+    </div>
+
+    <!-- CARRUSEL AUTOMÁTICO COMPACTO (4 imágenes) -->
+    <div class="mb-16 max-w-2xl mx-auto">
+        <h3 class="text-sm font-semibold text-gray-400 mb-3 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-wand-magic-sparkles text-primary"></i> Proceso en Photoshop e Illustrator
+        </h3>
+        
+        <div class="relative w-full aspect-video bg-cardBg border border-borderDark rounded-2xl overflow-hidden shadow-xl">
+            <!-- Slides Container -->
+            <div id="carousel-track" class="flex transition-transform duration-700 ease-in-out h-full">
+                
+                <!-- Slide 1: Photo 1 -->
+                <div class="min-w-full h-full relative flex-shrink-0">
+                    <img src="photo1.png" alt="Proceso Photoshop 1" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                        <span class="bg-primary/90 text-white px-2.5 py-1 rounded-full text-[11px] font-semibold shadow-md">Adobe Photoshop - Retoque</span>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Ilustrator 1 -->
+                <div class="min-w-full h-full relative flex-shrink-0">
+                    <img src="illustrator1.png" alt="Proceso Illustrator 1" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                        <span class="bg-primary/90 text-white px-2.5 py-1 rounded-full text-[11px] font-semibold shadow-md">Adobe Illustrator - Vectorización</span>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Photo 2 -->
+                <div class="min-w-full h-full relative flex-shrink-0">
+                    <img src="photo2.png" alt="Proceso Photoshop 2" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                        <span class="bg-primary/90 text-white px-2.5 py-1 rounded-full text-[11px] font-semibold shadow-md">Adobe Photoshop - Composición</span>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Ilustrator 2 -->
+                <div class="min-w-full h-full relative flex-shrink-0">
+                    <img src="illustrator2.png" alt="Proceso Illustrator 2" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                        <span class="bg-primary/90 text-white px-2.5 py-1 rounded-full text-[11px] font-semibold shadow-md">Adobe Illustrator - Trazos</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Indicadores de puntos (Dots) -->
+            <div class="absolute bottom-3 right-3 flex space-x-1.5 z-10 bg-black/50 px-2.5 py-1 rounded-full backdrop-blur-sm">
+                <button onclick="goToSlide(0)" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-all dot-indicator" id="dot-0"></button>
+                <button onclick="goToSlide(1)" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-all dot-indicator" id="dot-1"></button>
+                <button onclick="goToSlide(2)" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-all dot-indicator" id="dot-2"></button>
+                <button onclick="goToSlide(3)" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-all dot-indicator" id="dot-3"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6 Proyectos Publicitarios -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <!-- Pub 1 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('cmroman.png', 'Wrestlemania 42')">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden">
+                <img src="cmroman.png" alt="Wrestlemania 42" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-2 py-1 rounded-full text-[10px] font-semibold shadow-lg">Ampliar</span>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-1">Wrestlemania 42</h3>
+                <span class="text-primary hover:text-red-400 text-[10px] font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Pub 2 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('tytos.png', 'Tyto\'s Burger')">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden">
+                <img src="tytos.png" alt="Tyto's Burger" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-2 py-1 rounded-full text-[10px] font-semibold shadow-lg">Ampliar</span>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-1">Tyto's Burger</h3>
+                <span class="text-primary hover:text-red-400 text-[10px] font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Pub 3 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('cars.jpg', 'Cars')">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden">
+                <img src="cars.jpg" alt="Cars" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-2 py-1 rounded-full text-[10px] font-semibold shadow-lg">Ampliar</span>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-1">Cars</h3>
+                <span class="text-primary hover:text-red-400 text-[10px] font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Pub 4 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('0m.png', '0 Multimedia')">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden">
+                <img src="0m.png" alt="0 Multimedia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-2 py-1 rounded-full text-[10px] font-semibold shadow-lg">Ampliar</span>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-1">0 Multimedia</h3>
+                <span class="text-primary hover:text-red-400 text-[10px] font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Pub 5 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('camioneta.jpg', 'Promo de Camioneta')">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden">
+                <img src="camioneta.jpg" alt="Promo de camioneta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-2 py-1 rounded-full text-[10px] font-semibold shadow-lg">Ampliar</span>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-1">Promo de Camioneta</h3>
+                <span class="text-primary hover:text-red-400 text-[10px] font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Pub 6 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('aquamonkeys.png', 'Aquamonkeys')">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden">
+                <img src="aquamonkeys.png" alt="Aquamonkeys" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-2 py-1 rounded-full text-[10px] font-semibold shadow-lg">Ampliar</span>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-1">Aquamonkeys</h3>
+                <span class="text-primary hover:text-red-400 text-[10px] font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Script para el carrusel -->
+<script>
+    let currentSlide = 0;
+    const totalSlides = 4;
+    const track = document.getElementById('carousel-track');
+
+    function updateCarousel() {
+        if(track) {
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            for(let i = 0; i < totalSlides; i++) {
+                const dot = document.getElementById(`dot-${i}`);
+                if(dot) {
+                    if(i === currentSlide) {
+                        dot.classList.remove('bg-white/50');
+                        dot.classList.add('bg-primary', 'w-5');
+                    } else {
+                        dot.classList.remove('bg-primary', 'w-5');
+                        dot.classList.add('bg-white/50');
+                    }
+                }
+            }
+        }
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateCarousel();
+    }
+
+    function goToSlide(index) {
+        currentSlide = index;
+        updateCarousel();
+    }
+
+    setInterval(nextSlide, 4000);
+    
+    document.addEventListener("DOMContentLoaded", () => {
+        updateCarousel();
+    });
+</script>
+
+<!-- Seccion 4: Fotografía (Estilo Reels / Formato Vertical) -->
+<section id="fotografia" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-borderDark">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+            <span class="text-primary text-sm font-semibold uppercase tracking-wider">Capturas y Estilo</span>
+            <h2 class="text-3xl font-bold text-white mt-1">Fotografía</h2>
+        </div>
+        <p class="text-gray-400 text-sm mt-2 md:mt-0">Galería fotográfica profesional en formato vertical (6 proyectos)</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        
+        <!-- Foto 1: Totem Canadiense -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('totem.jpg', 'Totem Canadiense')">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden">
+                <img src="totem.jpg" alt="Totem Canadiense" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-2 py-1 rounded-full text-[10px] font-semibold shadow-lg">Ampliar</span>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-1">Totem Canadiense</h3>
+                <span class="text-primary hover:text-red-400 text-[10px] font-semibold">Ver foto <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Foto 2: Bosque de Chapultepec -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('bosque.jpg', 'Bosque de Chapultepec')">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden">
+                <img src="bosque.jpg" alt="Bosque de Chapultepec" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-2 py-1 rounded-full text-[10px] font-semibold shadow-lg">Ampliar</span>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-1">Bosque de Chapultepec</h3>
+                <span class="text-primary hover:text-red-400 text-[10px] font-semibold">Ver foto <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Foto 3: Hemeroteca -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('hemeroteca.jpg', 'Hemeroteca')">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden">
+                <img src="hemeroteca.jpg" alt="Hemeroteca" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-2 py-1 rounded-full text-[10px] font-semibold shadow-lg">Ampliar</span>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-1">Hemeroteca</h3>
+                <span class="text-primary hover:text-red-400 text-[10px] font-semibold">Ver foto <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Foto 4: Museo de Arte -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('arte.jpg', 'Museo de Arte')">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden">
+                <img src="arte.jpg" alt="Museo de Arte" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-2 py-1 rounded-full text-[10px] font-semibold shadow-lg">Ampliar</span>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-1">Museo de Arte</h3>
+                <span class="text-primary hover:text-red-400 text-[10px] font-semibold">Ver foto <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Foto 5: Edgar la tortuga -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('edgar.jpg', 'Edgar la tortuga')">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden">
+                <img src="edgar.jpg" alt="Edgar la tortuga" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-2 py-1 rounded-full text-[10px] font-semibold shadow-lg">Ampliar</span>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-1">Edgar la tortuga</h3>
+                <span class="text-primary hover:text-red-400 text-[10px] font-semibold">Ver foto <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Foto 6: Ofrenda -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('ofrenda.jpg', 'Ofrenda')">
+            <div class="relative aspect-[9/16] bg-gray-900 overflow-hidden">
+                <img src="ofrenda.jpg" alt="Ofrenda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-2 py-1 rounded-full text-[10px] font-semibold shadow-lg">Ampliar</span>
+                </div>
+            </div>
+            <div class="p-3 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-xs font-bold text-white mb-1">Ofrenda</h3>
+                <span class="text-primary hover:text-red-400 text-[10px] font-semibold">Ver foto <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i></span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Seccion 5: IA en Imágenes (Formato Cuadrado 1:1 - 8 Proyectos) -->
+<section id="ia-imagenes" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-borderDark">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+            <span class="text-primary text-sm font-semibold uppercase tracking-wider">Generación y Edición</span>
+            <h2 class="text-3xl font-bold text-white mt-1">IA en Imágenes</h2>
+        </div>
+        <p class="text-gray-400 text-sm mt-2 md:mt-0">Creación visual asistida por inteligencia artificial en formato 1:1 (8 proyectos)</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        
+        <!-- Imagen IA 1 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('ia1.png', 'E-DAY UNEVE')">
+            <div class="relative aspect-square bg-gray-900 overflow-hidden">
+                <img src="ia1.png" alt="E-DAY UNEVE" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg">Ampliar Foto</span>
+                </div>
+            </div>
+            <div class="p-4 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-sm font-bold text-white mb-1">E-DAY UNEVE</h3>
+                <span class="text-primary hover:text-red-400 text-xs font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Imagen IA 2 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('ia2.png', 'CELE caricatura')">
+            <div class="relative aspect-square bg-gray-900 overflow-hidden">
+                <img src="ia2.png" alt="CELE caricatura" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg">Ampliar Foto</span>
+                </div>
+            </div>
+            <div class="p-4 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-sm font-bold text-white mb-1">CELE caricatura</h3>
+                <span class="text-primary hover:text-red-400 text-xs font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Imagen IA 3 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('ia3.png', 'Tyto´s Burguer')">
+            <div class="relative aspect-square bg-gray-900 overflow-hidden">
+                <img src="ia3.png" alt="Tyto´s Burguer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg">Ampliar Foto</span>
+                </div>
+            </div>
+            <div class="p-4 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-sm font-bold text-white mb-1">Tyto´s Burguer</h3>
+                <span class="text-primary hover:text-red-400 text-xs font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Imagen IA 4 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('ia4.png', 'Coca-Cola Espuam')">
+            <div class="relative aspect-square bg-gray-900 overflow-hidden">
+                <img src="ia4.png" alt="Coca-Cola Espuam" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg">Ampliar Foto</span>
+                </div>
+            </div>
+            <div class="p-4 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-sm font-bold text-white mb-1">Coca-Cola Espuam</h3>
+                <span class="text-primary hover:text-red-400 text-xs font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Imagen IA 5 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('ia5.png', 'CampamentoOm')">
+            <div class="relative aspect-square bg-gray-900 overflow-hidden">
+                <img src="ia5.png" alt="CampamentoOm" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg">Ampliar Foto</span>
+                </div>
+            </div>
+            <div class="p-4 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-sm font-bold text-white mb-1">CampamentoOm</h3>
+                <span class="text-primary hover:text-red-400 text-xs font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Imagen IA 6 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('ia6.jpg', 'Libro de 5to')">
+            <div class="relative aspect-square bg-gray-900 overflow-hidden">
+                <img src="ia6.jpg" alt="Libro de 5to" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg">Ampliar Foto</span>
+                </div>
+            </div>
+            <div class="p-4 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-sm font-bold text-white mb-1">Libro de 5to</h3>
+                <span class="text-primary hover:text-red-400 text-xs font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Imagen IA 7 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('ia7.png', 'Stickworms logo')">
+            <div class="relative aspect-square bg-gray-900 overflow-hidden">
+                <img src="ia7.png" alt="Stickworms logo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg">Ampliar Foto</span>
+                </div>
+            </div>
+            <div class="p-4 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-sm font-bold text-white mb-1">Stickworms logo</h3>
+                <span class="text-primary hover:text-red-400 text-xs font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+            </div>
+        </div>
+
+        <!-- Imagen IA 8 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group cursor-pointer flex flex-col" onclick="openLightbox('ia8.png', 'Tour de carnitas logo')">
+            <div class="relative aspect-square bg-gray-900 overflow-hidden">
+                <img src="ia8.png" alt="Tour de carnitas logo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="bg-primary text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg">Ampliar Foto</span>
+                </div>
+            </div>
+            <div class="p-4 flex flex-col flex-grow justify-between text-center">
+                <h3 class="text-sm font-bold text-white mb-1">Tour de carnitas logo</h3>
+                <span class="text-primary hover:text-red-400 text-xs font-semibold">Ver diseño <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Seccion 6: IA en Videos (Formato Horizontal 16:9 - 3 Proyectos) -->
+<section id="ia-videos" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-borderDark">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+            <span class="text-primary text-sm font-semibold uppercase tracking-wider">Producción Cinematográfica IA</span>
+            <h2 class="text-3xl font-bold text-white mt-1">IA en Videos</h2>
+        </div>
+        <p class="text-gray-400 text-sm mt-2 md:mt-0">Piezas audiovisuales generadas y mejoradas con inteligencia artificial (3 proyectos)</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Video IA 1: El sabor de la fama 1 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-video bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('115Rm4_XGzbMTzyQTKfoIPkjRgzC8Wse-', 'El sabor de la fama 1')">
+                <img src="videoia1.png" alt="El sabor de la fama 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">El sabor de la fama 1</h3>
+                    <p class="text-gray-400 text-sm mb-4">Primera parte del proyecto audiovisual generado y asistido con IA.</p>
+                </div>
+                <button onclick="openVideoModal('115Rm4_XGzbMTzyQTKfoIPkjRgzC8Wse-', 'El sabor de la fama 1')" class="inline-flex items-center gap-2 text-primary hover:text-red-400 text-sm font-semibold transition-colors text-left">
+                    <i class="fa-brands fa-google-drive"></i> Reproducir video <i class="fa-solid fa-play text-xs"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Video IA 2: El sabor de la fama 2 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-video bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('1FaVaVkDyRaf_LngrWG9dxaoYr8pmTNFM', 'El sabor de la fama 2')">
+                <img src="videoia2.png" alt="El sabor de la fama 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">El sabor de la fama 2</h3>
+                    <p class="text-gray-400 text-sm mb-4">Segunda parte del proyecto audiovisual generado y asistido con IA.</p>
+                </div>
+                <button onclick="openVideoModal('1FaVaVkDyRaf_LngrWG9dxaoYr8pmTNFM', 'El sabor de la fama 2')" class="inline-flex items-center gap-2 text-primary hover:text-red-400 text-sm font-semibold transition-colors text-left">
+                    <i class="fa-brands fa-google-drive"></i> Reproducir video <i class="fa-solid fa-play text-xs"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Video IA 3: El sabor de la fama 3 -->
+        <div class="bg-cardBg border border-borderDark rounded-2xl overflow-hidden hover:border-primary/50 transition-all group flex flex-col">
+            <div class="relative aspect-video bg-gray-900 overflow-hidden cursor-pointer" onclick="openVideoModal('1woy56xIzfhwRpZdWmYhGUwrQ_RfoCT6V', 'El sabor de la fama 3')">
+                <img src="videoia3.png" alt="El sabor de la fama 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-play ml-0.5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">El sabor de la fama 3</h3>
+                    <p class="text-gray-400 text-sm mb-4">Tercera parte del proyecto audiovisual generado y asistido con IA.</p>
+                </div>
+                <button onclick="openVideoModal('1woy56xIzfhwRpZdWmYhGUwrQ_RfoCT6V', 'El sabor de la fama 3')" class="inline-flex items-center gap-2 text-primary hover:text-red-400 text-sm font-semibold transition-colors text-left">
+                    <i class="fa-brands fa-google-drive"></i> Reproducir video <i class="fa-solid fa-play text-xs"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Contacto Section -->
+<section id="contacto" class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto border-t border-borderDark text-center">
+    <span class="text-primary text-sm font-semibold uppercase tracking-wider">Hablemos</span>
+    <h2 class="text-3xl font-bold text-white mt-1 mb-4">¿Tienes un proyecto en mente?</h2>
+    <p class="text-gray-400 mb-10 max-w-xl mx-auto">Ponte en contacto conmigo directamente a través de WhatsApp o correo electrónico.</p>
+    
+    <div class="flex flex-col sm:flex-row justify-center gap-6 items-center">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/525573656001" target="_blank" class="bg-cardBg border border-borderDark hover:border-primary text-white px-8 py-4 rounded-2xl transition-all hover:scale-105 flex items-center gap-4 group">
+            <div class="w-12 h-12 rounded-full bg-primary/20 text-primary flex items-center justify-center text-xl group-hover:bg-primary group-hover:text-white transition-colors">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="text-left">
+                <span class="block text-xs text-gray-400 uppercase tracking-wider">WhatsApp</span>
+                <span class="text-sm font-bold text-white">55 7365 6001</span>
+            </div>
+        </a>
+
+        <!-- Correo Electrónico -->
+        <a href="mailto:barlow-8123@outlook.com" class="bg-cardBg border border-borderDark hover:border-primary text-white px-8 py-4 rounded-2xl transition-all hover:scale-105 flex items-center gap-4 group">
+            <div class="w-12 h-12 rounded-full bg-primary/20 text-primary flex items-center justify-center text-xl group-hover:bg-primary group-hover:text-white transition-colors">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="text-left">
+                <span class="block text-xs text-gray-400 uppercase tracking-wider">Correo Electrónico</span>
+                <span class="text-sm font-bold text-white">barlow-8123@outlook.com</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cardBg border-t border-borderDark py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Portafolio Profesional. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Lightbox Modal para Publicidad y Fotografía -->
+    <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4" onclick="closeLightbox()">
+        <div class="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white text-2xl hover:text-primary transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="lightbox-img" src="" alt="Ampliada" class="max-w-full max-h-[75vh] object-contain rounded-xl border border-borderDark mb-4">
+            <p id="lightbox-title" class="text-white text-lg font-medium"></p>
+        </div>
+    </div>
+
+    <!-- Modal Reproductor de Video para Google Drive -->
+    <div id="video-modal" class="fixed inset-0 z-50 bg-black/95 hidden items-center justify-center p-4" onclick="closeVideoModal()">
+        <div class="relative max-w-4xl w-full aspect-video flex flex-col items-center bg-cardBg border border-borderDark rounded-2xl overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
+            <button onclick="closeVideoModal()" class="absolute top-4 right-4 text-white text-xl hover:text-primary transition-colors z-20 bg-black/60 w-10 h-10 rounded-full flex items-center justify-center shadow-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <iframe id="video-iframe" src="" class="w-full h-full border-0" allow="autoplay" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Script de Interactividad -->
+    <script>
+        // Menú móvil toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Lightbox para Imágenes (Publicidad / Fotografía)
+        function openLightbox(imgSrc, title) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxTitle = document.getElementById('lightbox-title');
+
+            lightboxImg.src = imgSrc;
+            lightboxTitle.textContent = title;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('flex');
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Modal para Reproducir Videos de Google Drive
+        function openVideoModal(driveFileId, title) {
+            const modal = document.getElementById('video-modal');
+            const iframe = document.getElementById('video-iframe');
+
+            // URL oficial de inserción de Google Drive
+            iframe.src = `https://drive.google.com/file/d/${driveFileId}/preview`;
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('video-modal');
+            const iframe = document.getElementById('video-iframe');
+
+            iframe.src = ''; // Detiene la reproducción del video al cerrar
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>
